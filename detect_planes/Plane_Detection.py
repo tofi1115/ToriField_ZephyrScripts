@@ -60,7 +60,6 @@ def detect_plane(rti,
                 detect_options:{},
                 optional_plots:[]):
     '''
-    Developed by Tori E. Field
     Function which detects and returns list of planes detected
     -------------
     Inputs:

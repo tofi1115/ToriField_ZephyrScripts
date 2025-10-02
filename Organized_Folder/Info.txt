@@ -1,0 +1,3 @@
+This folder is essentially intended to conglomerate all the code I've been working on in the larger repository into
+a smaller and easier to read and parse throught format. This is what will eventually what will be handed off. Not the 
+entire repository.
