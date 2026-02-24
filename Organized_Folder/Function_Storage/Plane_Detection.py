@@ -58,7 +58,9 @@ def cfar_fast(
 def detect_plane(rti,
                 start_samples:0,
                 detect_options:{},
-                optional_plots:[]):
+                optional_plots:[],
+                time_values:[]):
+    #TODO: Add documentation on time_values, clean up a bit if nesesary
     '''
     Function which detects and returns list of planes detected
     -------------
@@ -231,9 +233,11 @@ def detect_plane(rti,
     for label in unique_labels:
         clustered_points[label] = DBSCAN_array[labels == label]
 
+    sample_proporties={"sample_time:":time_values[0],"sample_legnth":time_values[1]}
+
     #Fill up dictionary with information on each cluster
     cluster=0
-    list_dict_properties=[]
+    list_dict_properties=[sample_proporties]
 
     while cluster< n_clusters_:
         plane=clustered_points[cluster]
