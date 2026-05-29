@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from matplotlib.gridspec import GridSpec
 import plotly.express as px
 import cartopy.crs as ccrs
-import skytools
+#import skytools
 import jmtools as jt
 from jmtools import geodetic2aer
 from jmtools import interferometry

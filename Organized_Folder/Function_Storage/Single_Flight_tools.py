@@ -116,7 +116,7 @@ def bistaticrange(tx,rx,df):
     z=df['Z']
     tx_range=np.sqrt((tx[0]-x)**2+(tx[1]-y)**2+(tx[2]-z)**2) #Calculate distance from plane to tx
     rx_range=np.sqrt((rx[0]-x)**2+(rx[1]-y)**2+(rx[2]-z)**2) #Calculate distance from plane to rx
-    bistatic_range=tx_range+rx_range #Sum to return bistatic range
+    bistatic_range=tx_range+rx_range-19000 #Sum to return bistatic range
     df['brange']=bistatic_range
 
     #Plot bistatic range vs time
